@@ -1,0 +1,13 @@
+[package]
+name = "loop-record"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Loop's recorder: loop-bus events as LSL markers, and session recordings as XDF"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+loop-bus = { path = "../loop-bus" }
+loop-lsl = { path = "../loop-lsl" }
+serde_json = "1"
+tokio = { version = "1", features = ["rt", "macros", "sync", "time", "signal"] }

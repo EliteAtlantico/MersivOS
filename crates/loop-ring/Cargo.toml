@@ -1,0 +1,17 @@
+[package]
+name = "loop-ring"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Loop's ring: tiles, status arc, raise / return / pin, running as a Stardust XR client"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+glam = { version = "0.33.7", features = ["mint", "serde"] }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["rt", "macros", "sync", "time"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+loop-bus = { path = "../loop-bus" }
+stardust-xr-asteroids = { path = "../../upstream/asteroids" }
+stardust-xr-fusion = "0.53.0-rc.1"
+stardust-xr-molecules = "0.53.0-rc.1"

@@ -1,0 +1,12 @@
+[package]
+name = "loop-sense"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Loop's sensing service: EEG over LSL → signal quality, focus, confirm gestures"
+
+[dependencies]
+loop-bus = { path = "../loop-bus" }
+loop-lsl = { path = "../loop-lsl" }
+realfft = "3"
+tokio = { version = "1", features = ["rt", "macros", "sync"] }

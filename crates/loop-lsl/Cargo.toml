@@ -1,0 +1,9 @@
+[package]
+name = "loop-lsl"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "The parts of liblsl Loop uses, loaded at run time"
+
+[dependencies]
+libloading = "0.9"

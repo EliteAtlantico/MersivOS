@@ -1,0 +1,7 @@
+[workspace]
+resolver = "3"
+members = ["crates/loop-ring", "crates/loop-bus", "crates/loop-lsl", "crates/loop-sense", "crates/loop-record"]
+exclude = ["upstream"]
+
+[profile.dev.package."*"]
+opt-level = 3
